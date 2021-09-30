@@ -36,6 +36,12 @@ This flag will define whether if your build will be shipped with face unlock of 
 As of 1.2 Staging "Botan";
 
 ```
+STELLAR_BUILD_TYPE := auroraoss
+```
+
+This flag will ship your build with Aurora Store and AuroraServices.
+
+```
 SHIPPING_WITH_LAWNCHAIR := true
 ```
 
