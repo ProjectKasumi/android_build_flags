@@ -1,4 +1,4 @@
-# Build flags for Stellar-Weeb
+# Build flags for Project Kasumi
 
 ## Everything is easy if you know. And so here I provide all the flags you can use to configure your build.
 
@@ -12,10 +12,10 @@ This flag will ship your build with LineageSU (The good old SuperUser that's bui
 
 -----
 
-### Coming from Stellar OS
+### Coming from Project Materium
 
 ```
-STELLAR_BUILDTYPE := gapps
+KASUMI_BUILD_TYPE := gapps
 TARGET_GAPPS_ARCH := arm | arm64
 ```
 
@@ -31,30 +31,30 @@ This flag will define whether if your build will be shipped with face unlock of 
 
 -----
 
-### Special to Stellar-Weeb
+### Special to Project Kasumi
 
-As of 1.2 Staging "Botan";
+As of 1.0 "PoPiPa";
 
 ```
-STELLAR_BUILD_TYPE := auroraoss
+KASUMI_BUILD_TYPE := auroraoss
 ```
 
 This flag will ship your build with Aurora Store and AuroraServices.
 
 ```
-SHIPPING_WITH_LAWNCHAIR := true
+KASUMI_SHIP_LAWNCHAIR := true
 ```
 
 This flag will ship your build with Lawnchair included and remove Trebuchet+.
 
 ```
-SHIPPING_WITH_GSANS := true
+KASUMI_SHIP_GSANS := true
 ```
 
 This flag will ship your build with Google Sans as default font instead of Roboto.
 
 ```
-SHIPPING_WITH_ADAWAY := true
+KASUMI_SHIP_ADAWAY := true
 ```
 
 This flag will ship your build with AdAway included.
