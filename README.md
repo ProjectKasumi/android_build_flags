@@ -48,12 +48,6 @@ KASUMI_SHIP_LAWNCHAIR := true
 This flag will ship your build with Lawnchair included and remove Trebuchet+.
 
 ```
-KASUMI_SHIP_GSANS := true
-```
-
-This flag will ship your build with Google Sans as default font instead of Roboto.
-
-```
 KASUMI_SHIP_ADAWAY := true
 ```
 
