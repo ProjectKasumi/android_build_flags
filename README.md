@@ -73,3 +73,10 @@ one of Kasumi's (Namely `vendor/kasumi`) and so nothing problematic
 occurs regarding this file. If your maintainers tell you to change
 that path from `vendor/lineage` to `vendor/kasumi` while building,
 remember this flag and tell them about it - Link if necessary.
+
+```
+TARGET_BOOT_ANIMATION_RES := 480 | 720 | 1080
+```
+
+Tgis flag defines the boot animation resolution to use. If you
+omit this, it will be defaulted to "720".
