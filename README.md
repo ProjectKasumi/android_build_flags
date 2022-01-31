@@ -31,7 +31,7 @@ TARGET_FACE_UNLOCK_SUPPORTED := true | false
 ```
 
 This flag will define whether if your build will be shipped with
-face unlock of not. For ARM devices, though, you have to keep this
+face unlock or not. For ARM devices, though, you have to keep this
 off if you don't have the lib for it present.
 
 -----
@@ -75,8 +75,8 @@ that path from `vendor/lineage` to `vendor/kasumi` while building,
 remember this flag and tell them about it - Link if necessary.
 
 ```
-TARGET_BOOT_ANIMATION_RES := 480 | 720 | 1080
+TARGET_BOOT_ANIMATION_RES := 480 | 720 | 1080 | 1440
 ```
 
-Tgis flag defines the boot animation resolution to use. If you
+This flag defines the boot animation resolution to use. If you
 omit this, it will be defaulted to "720".
