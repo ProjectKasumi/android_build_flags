@@ -26,16 +26,15 @@ KASUMI_SHIP_ADAWAY := true
 This flag will ship your build with AdAway included.
 
 ```
-TARGET_NEEDS_LINEAGE_ISFP_PERM := true
+KASUMI_SHIP_GCGOP := true
 ```
 
-This flag is specifically for devices with in-screen fingerprint
-hardware and needing
-`vendor.lineage.biometrics.fingerprint.inscreen.xml`. [You can check
-`device.mk` to see if your device needs it.](https://github.com/Haky86/android_device_samsung_a70q/blob/21d461bb2fa491b2268df1aabe0ef82185b185af/device.mk#L42)
+This flag will ship your build with GCam GO Prebuilt
+included. For best results, combine this with GApps
+builds only;
 
-To come to what this flag does, it defines that file's path as the
-one of Kasumi's (Namely `vendor/kasumi`) and so nothing problematic
-occurs regarding this file. If your maintainers tell you to change
-that path from `vendor/lineage` to `vendor/kasumi` while building,
-remember this flag and tell them about it - Link if necessary.
+```
+ifeq ($(KASUMI_BUILD_TYPE),gapps)
+    KASUMI_SHIP_GCGOP := true
+endif
+```
